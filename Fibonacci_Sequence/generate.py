@@ -25,13 +25,13 @@ def F_phi(n) :
 	return ans
 
 def main():
-	term = int(input("Enter the number of Fibonacci terms to display: "))	
-	method = int(input("Choose a method of generating the terms:\n\t[1] Iterative\n\t[2] Recursive\n\t[3] Golden ratio\n-> "))
+	term = 10
+	method = 1
 	if method == 1:
-		print(list(map(F_iter, range(0,term))))
+		print(list(map(F_iter, range(0,term))))	#Iterative
 	elif method == 2:
-		print(list(map(F_rec, range(0,term))))
+		print(list(map(F_rec, range(0,term))))	#Recursive
 	elif method == 3:
-		print(list(map(F_phi, range(0,term))))
+		print(list(map(F_phi, range(0,term))))	#Golden ratio
 
 if __name__ == "__main__": main()
